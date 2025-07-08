@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Site</title>
+    <style>
+        body { font-family: Arial; margin: 0; padding: 0; }
+        nav { background-color: #333; padding: 10px; }
+        nav a {
+            color: white; text-decoration: none; padding: 14px 20px;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <!-- <a href="/about/">About</a>
+        <a href="/contact/">Contact</a> -->
+    </nav>
+    <div>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

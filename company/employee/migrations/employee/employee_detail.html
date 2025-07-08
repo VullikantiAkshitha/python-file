@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Detail</title>
+</head>
+<body>
+    <h2>{{ employee.name }}</h2>
+    <p>Email: {{ employee.email }}</p>
+    <p>Department: {{ employee.department }}</p>
+    <p>Phone: {{ employee.phone }}</p>
+    <p>Joining Date: {{ employee.joining_date }}</p>
+    <a href="{% url 'employee_update' employee.id %}">Edit</a> |
+    <a href="{% url 'employee_delete' employee.id %}">Delete</a> |
+    <a href="{% url 'employee_list' %}">Back to List</a>
+</body>
+</html>
